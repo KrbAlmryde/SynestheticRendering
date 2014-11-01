@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		830427151A03FD4C00DB73A3 /* isoRay.fsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 830427121A03FD4C00DB73A3 /* isoRay.fsh */; };
+		830427161A03FD4C00DB73A3 /* isoRay.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 830427131A03FD4C00DB73A3 /* isoRay.vsh */; };
+		8311589C1A009D1E002DABB5 /* SynestheticRendering.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8311589B1A009D1E002DABB5 /* SynestheticRendering.mm */; };
+		831158A81A009D62002DABB5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8311589D1A009D62002DABB5 /* libz.dylib */; };
+		831158A91A009D62002DABB5 /* Aluminum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8311589E1A009D62002DABB5 /* Aluminum.framework */; };
+		831158AA1A009D62002DABB5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8311589F1A009D62002DABB5 /* AVFoundation.framework */; };
+		831158AB1A009D62002DABB5 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831158A01A009D62002DABB5 /* Carbon.framework */; };
+		831158AC1A009D62002DABB5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831158A11A009D62002DABB5 /* Cocoa.framework */; };
+		831158AD1A009D62002DABB5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831158A21A009D62002DABB5 /* CoreMedia.framework */; };
+		831158AE1A009D62002DABB5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831158A31A009D62002DABB5 /* QuartzCore.framework */; };
+		831158AF1A009D62002DABB5 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831158A41A009D62002DABB5 /* OpenGL.framework */; };
+		831158B01A009D62002DABB5 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831158A51A009D62002DABB5 /* AppKit.framework */; };
+		831158B11A009D62002DABB5 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831158A61A009D62002DABB5 /* CoreFoundation.framework */; };
+		831158B21A009D62002DABB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831158A71A009D62002DABB5 /* Foundation.framework */; };
+		831158BF1A0159BF002DABB5 /* Attribution.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 831158BC1A0159BF002DABB5 /* Attribution.txt */; };
+		831158C01A0159BF002DABB5 /* MaryShelleyFrankenstein.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 831158BD1A0159BF002DABB5 /* MaryShelleyFrankenstein.txt */; };
+		831158C11A0159BF002DABB5 /* testCorpus.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 831158BE1A0159BF002DABB5 /* testCorpus.txt */; };
+		831158C81A018491002DABB5 /* tex3D.fsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 831158C61A018491002DABB5 /* tex3D.fsh */; };
+		831158C91A018491002DABB5 /* tex3D.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 831158C71A018491002DABB5 /* tex3D.vsh */; };
+		83BB470B1A057EE900F97226 /* raycast.fsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 83BB47091A057EE900F97226 /* raycast.fsh */; };
+		83BB470C1A057EE900F97226 /* raycast.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 83BB470A1A057EE900F97226 /* raycast.vsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8311588F1A009CDC002DABB5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				830427151A03FD4C00DB73A3 /* isoRay.fsh in CopyFiles */,
+				830427161A03FD4C00DB73A3 /* isoRay.vsh in CopyFiles */,
+				83BB470B1A057EE900F97226 /* raycast.fsh in CopyFiles */,
+				83BB470C1A057EE900F97226 /* raycast.vsh in CopyFiles */,
+				831158BF1A0159BF002DABB5 /* Attribution.txt in CopyFiles */,
+				831158C01A0159BF002DABB5 /* MaryShelleyFrankenstein.txt in CopyFiles */,
+				831158C11A0159BF002DABB5 /* testCorpus.txt in CopyFiles */,
+				831158C81A018491002DABB5 /* tex3D.fsh in CopyFiles */,
+				831158C91A018491002DABB5 /* tex3D.vsh in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		830427111A03FD4C00DB73A3 /* colorTable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = colorTable.hpp; sourceTree = "<group>"; };
+		830427121A03FD4C00DB73A3 /* isoRay.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = isoRay.fsh; sourceTree = "<group>"; };
+		830427131A03FD4C00DB73A3 /* isoRay.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = isoRay.vsh; sourceTree = "<group>"; };
+		831158911A009CDC002DABB5 /* SynestheticRendering */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SynestheticRendering; sourceTree = BUILT_PRODUCTS_DIR; };
+		8311589B1A009D1E002DABB5 /* SynestheticRendering.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SynestheticRendering.mm; sourceTree = "<group>"; };
+		8311589D1A009D62002DABB5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8311589E1A009D62002DABB5 /* Aluminum.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Aluminum.framework; path = /Library/Frameworks/Aluminum.framework; sourceTree = "<absolute>"; };
+		8311589F1A009D62002DABB5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		831158A01A009D62002DABB5 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		831158A11A009D62002DABB5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		831158A21A009D62002DABB5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		831158A31A009D62002DABB5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		831158A41A009D62002DABB5 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		831158A51A009D62002DABB5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		831158A61A009D62002DABB5 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		831158A71A009D62002DABB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		831158BC1A0159BF002DABB5 /* Attribution.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Attribution.txt; sourceTree = "<group>"; };
+		831158BD1A0159BF002DABB5 /* MaryShelleyFrankenstein.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MaryShelleyFrankenstein.txt; sourceTree = "<group>"; };
+		831158BE1A0159BF002DABB5 /* testCorpus.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = testCorpus.txt; sourceTree = "<group>"; };
+		831158C61A018491002DABB5 /* tex3D.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = tex3D.fsh; sourceTree = "<group>"; };
+		831158C71A018491002DABB5 /* tex3D.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = tex3D.vsh; sourceTree = "<group>"; };
+		83BB47091A057EE900F97226 /* raycast.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = raycast.fsh; sourceTree = "<group>"; };
+		83BB470A1A057EE900F97226 /* raycast.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = raycast.vsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8311588E1A009CDC002DABB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831158A81A009D62002DABB5 /* libz.dylib in Frameworks */,
+				831158A91A009D62002DABB5 /* Aluminum.framework in Frameworks */,
+				831158AA1A009D62002DABB5 /* AVFoundation.framework in Frameworks */,
+				831158AB1A009D62002DABB5 /* Carbon.framework in Frameworks */,
+				831158AC1A009D62002DABB5 /* Cocoa.framework in Frameworks */,
+				831158AD1A009D62002DABB5 /* CoreMedia.framework in Frameworks */,
+				831158AE1A009D62002DABB5 /* QuartzCore.framework in Frameworks */,
+				831158AF1A009D62002DABB5 /* OpenGL.framework in Frameworks */,
+				831158B01A009D62002DABB5 /* AppKit.framework in Frameworks */,
+				831158B11A009D62002DABB5 /* CoreFoundation.framework in Frameworks */,
+				831158B21A009D62002DABB5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		830427171A041BC600DB73A3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8311589B1A009D1E002DABB5 /* SynestheticRendering.mm */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		830427181A041BCE00DB73A3 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				830427111A03FD4C00DB73A3 /* colorTable.hpp */,
+			);
+			name = Header;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		830427191A041BE800DB73A3 /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				831158B31A009DA8002DABB5 /* Frameworks */,
+				831158921A009CDC002DABB5 /* Products */,
+			);
+			name = misc;
+			sourceTree = "<group>";
+		};
+		831158881A009CDC002DABB5 = {
+			isa = PBXGroup;
+			children = (
+				830427191A041BE800DB73A3 /* misc */,
+				831158931A009CDC002DABB5 /* SynestheticRendering */,
+			);
+			sourceTree = "<group>";
+		};
+		831158921A009CDC002DABB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				831158911A009CDC002DABB5 /* SynestheticRendering */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		831158931A009CDC002DABB5 /* SynestheticRendering */ = {
+			isa = PBXGroup;
+			children = (
+				830427181A041BCE00DB73A3 /* Header */,
+				831158B81A0159A1002DABB5 /* Resources */,
+				830427171A041BC600DB73A3 /* Source */,
+			);
+			path = SynestheticRendering;
+			sourceTree = "<group>";
+		};
+		831158B31A009DA8002DABB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8311589D1A009D62002DABB5 /* libz.dylib */,
+				8311589E1A009D62002DABB5 /* Aluminum.framework */,
+				8311589F1A009D62002DABB5 /* AVFoundation.framework */,
+				831158A01A009D62002DABB5 /* Carbon.framework */,
+				831158A11A009D62002DABB5 /* Cocoa.framework */,
+				831158A21A009D62002DABB5 /* CoreMedia.framework */,
+				831158A31A009D62002DABB5 /* QuartzCore.framework */,
+				831158A41A009D62002DABB5 /* OpenGL.framework */,
+				831158A51A009D62002DABB5 /* AppKit.framework */,
+				831158A61A009D62002DABB5 /* CoreFoundation.framework */,
+				831158A71A009D62002DABB5 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		831158B81A0159A1002DABB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83BB470D1A057EFA00F97226 /* frag */,
+				83BB470E1A057F0100F97226 /* vert */,
+				831158BC1A0159BF002DABB5 /* Attribution.txt */,
+				83BB470F1A057F1300F97226 /* corpora */,
+			);
+			name = Resources;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		83BB470D1A057EFA00F97226 /* frag */ = {
+			isa = PBXGroup;
+			children = (
+				83BB47091A057EE900F97226 /* raycast.fsh */,
+				830427121A03FD4C00DB73A3 /* isoRay.fsh */,
+				831158C61A018491002DABB5 /* tex3D.fsh */,
+			);
+			name = frag;
+			sourceTree = "<group>";
+		};
+		83BB470E1A057F0100F97226 /* vert */ = {
+			isa = PBXGroup;
+			children = (
+				83BB470A1A057EE900F97226 /* raycast.vsh */,
+				830427131A03FD4C00DB73A3 /* isoRay.vsh */,
+				831158C71A018491002DABB5 /* tex3D.vsh */,
+			);
+			name = vert;
+			sourceTree = "<group>";
+		};
+		83BB470F1A057F1300F97226 /* corpora */ = {
+			isa = PBXGroup;
+			children = (
+				831158BD1A0159BF002DABB5 /* MaryShelleyFrankenstein.txt */,
+				831158BE1A0159BF002DABB5 /* testCorpus.txt */,
+			);
+			name = corpora;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		831158901A009CDC002DABB5 /* SynestheticRendering */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 831158981A009CDC002DABB5 /* Build configuration list for PBXNativeTarget "SynestheticRendering" */;
+			buildPhases = (
+				8311588D1A009CDC002DABB5 /* Sources */,
+				8311588E1A009CDC002DABB5 /* Frameworks */,
+				8311588F1A009CDC002DABB5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SynestheticRendering;
+			productName = SynestheticRendering;
+			productReference = 831158911A009CDC002DABB5 /* SynestheticRendering */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		831158891A009CDC002DABB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Kyle Reese Almryde";
+				TargetAttributes = {
+					831158901A009CDC002DABB5 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 8311588C1A009CDC002DABB5 /* Build configuration list for PBXProject "SynestheticRendering" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 831158881A009CDC002DABB5;
+			productRefGroup = 831158921A009CDC002DABB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				831158901A009CDC002DABB5 /* SynestheticRendering */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8311588D1A009CDC002DABB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8311589C1A009D1E002DABB5 /* SynestheticRendering.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		831158961A009CDC002DABB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		831158971A009CDC002DABB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		831158991A009CDC002DABB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+					/opt/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8311589A1A009CDC002DABB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+					/opt/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8311588C1A009CDC002DABB5 /* Build configuration list for PBXProject "SynestheticRendering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831158961A009CDC002DABB5 /* Debug */,
+				831158971A009CDC002DABB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		831158981A009CDC002DABB5 /* Build configuration list for PBXNativeTarget "SynestheticRendering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831158991A009CDC002DABB5 /* Debug */,
+				8311589A1A009CDC002DABB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 831158891A009CDC002DABB5 /* Project object */;
+}
