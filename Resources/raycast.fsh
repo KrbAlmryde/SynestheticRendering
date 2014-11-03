@@ -6,8 +6,8 @@ smooth in vec3 vUV;				//3D texture coordinates form vertex shader
 //interpolated by rasterizer
 
 //uniforms
-uniform sampler1D	lut;		//lookup table
 uniform sampler3D	volume;		//volume dataset
+uniform sampler1D	lut;		//lookup table
 uniform vec3		camPos;		//camera position
 uniform vec3		step_size;	//ray step size
 

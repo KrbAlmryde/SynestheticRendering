@@ -26,6 +26,9 @@
 		831158C11A0159BF002DABB5 /* testCorpus.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 831158BE1A0159BF002DABB5 /* testCorpus.txt */; };
 		831158C81A018491002DABB5 /* tex3D.fsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 831158C61A018491002DABB5 /* tex3D.fsh */; };
 		831158C91A018491002DABB5 /* tex3D.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 831158C71A018491002DABB5 /* tex3D.vsh */; };
+		83443AC31A0702500099CA53 /* TransferFunction.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83443AC21A0702500099CA53 /* TransferFunction.mm */; };
+		83443AC61A073C290099CA53 /* graph.fsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 83443AC41A073C290099CA53 /* graph.fsh */; };
+		83443AC71A073C290099CA53 /* graph.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 83443AC51A073C290099CA53 /* graph.vsh */; };
 		83BB470B1A057EE900F97226 /* raycast.fsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 83BB47091A057EE900F97226 /* raycast.fsh */; };
 		83BB470C1A057EE900F97226 /* raycast.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 83BB470A1A057EE900F97226 /* raycast.vsh */; };
 /* End PBXBuildFile section */
@@ -46,6 +49,8 @@
 				831158C11A0159BF002DABB5 /* testCorpus.txt in CopyFiles */,
 				831158C81A018491002DABB5 /* tex3D.fsh in CopyFiles */,
 				831158C91A018491002DABB5 /* tex3D.vsh in CopyFiles */,
+				83443AC61A073C290099CA53 /* graph.fsh in CopyFiles */,
+				83443AC71A073C290099CA53 /* graph.vsh in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +78,9 @@
 		831158BE1A0159BF002DABB5 /* testCorpus.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = testCorpus.txt; sourceTree = "<group>"; };
 		831158C61A018491002DABB5 /* tex3D.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = tex3D.fsh; sourceTree = "<group>"; };
 		831158C71A018491002DABB5 /* tex3D.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = tex3D.vsh; sourceTree = "<group>"; };
+		83443AC21A0702500099CA53 /* TransferFunction.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = TransferFunction.mm; sourceTree = "<group>"; };
+		83443AC41A073C290099CA53 /* graph.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = graph.fsh; sourceTree = "<group>"; };
+		83443AC51A073C290099CA53 /* graph.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = graph.vsh; sourceTree = "<group>"; };
 		83BB47091A057EE900F97226 /* raycast.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = raycast.fsh; sourceTree = "<group>"; };
 		83BB470A1A057EE900F97226 /* raycast.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = raycast.vsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				8311589B1A009D1E002DABB5 /* SynestheticRendering.mm */,
+				83443AC21A0702500099CA53 /* TransferFunction.mm */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -187,6 +196,7 @@
 				83BB47091A057EE900F97226 /* raycast.fsh */,
 				830427121A03FD4C00DB73A3 /* isoRay.fsh */,
 				831158C61A018491002DABB5 /* tex3D.fsh */,
+				83443AC41A073C290099CA53 /* graph.fsh */,
 			);
 			name = frag;
 			sourceTree = "<group>";
@@ -197,6 +207,7 @@
 				83BB470A1A057EE900F97226 /* raycast.vsh */,
 				830427131A03FD4C00DB73A3 /* isoRay.vsh */,
 				831158C71A018491002DABB5 /* tex3D.vsh */,
+				83443AC51A073C290099CA53 /* graph.vsh */,
 			);
 			name = vert;
 			sourceTree = "<group>";
@@ -266,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83443AC31A0702500099CA53 /* TransferFunction.mm in Sources */,
 				8311589C1A009D1E002DABB5 /* SynestheticRendering.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

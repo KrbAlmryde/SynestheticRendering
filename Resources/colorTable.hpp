@@ -1,6 +1,8 @@
 #ifndef _TABLES_INCLUDED
 #define _TABLES_INCLUDED
 
+static float jetTable[256][4];
+
 static const float vowelTable[256][4] = {
     { 0.0f, 0.0f, 0.0f, 0.0f },    { 0.0f, 0.0f, 0.0f, 0.0f },    { 0.0f, 0.0f, 0.0f, 0.0f },
     { 0.0f, 0.0f, 0.0f, 0.0f },    { 0.0f, 0.0f, 0.0f, 0.0f },    { 0.0f, 0.0f, 0.0f, 0.0f },
