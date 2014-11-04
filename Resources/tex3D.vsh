@@ -1,20 +1,20 @@
+#version 330 core
 
+layout(location = 0) in vec3 vVertex;	//object space vertex position
 
-#version 150
+//uniform
+uniform mat4 MVP;		//combined modelview projection matrix
 
-uniform mat4 model;
-uniform mat4 VP;
+smooth out vec3 vUV;	//3D texture coordinates for texture lookup in the fragment shader
 
-
-in vec4 vertexPosition;
-in vec4 vertexTexCoord;
-
-out vec3 texCoord;
-
-void main() {
-  texCoord = (model * vertexTexCoord).xyz;
-//  gl_Position = proj * view * model * vertexPosition;
-  gl_Position = VP * vertexPosition;
-
+void main()
+{
+    //get the clipspace position
+    gl_Position = MVP*vec4(vVertex.xyz,1);
+    
+    //get the 3D texture coordinates by adding (0.5,0.5,0.5) to the object space
+    //vertex position. Since the unit cube is at origin (min: (-0.5,-0.5,-0.5) and max: (0.5,0.5,0.5))
+    //adding (0.5,0.5,0.5) to the unit cube object space position gives us values from (0,0,0) to
+    //(1,1,1)
+    vUV = vVertex + vec3(0.5);
 }
-

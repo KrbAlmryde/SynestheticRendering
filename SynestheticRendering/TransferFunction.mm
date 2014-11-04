@@ -125,8 +125,8 @@ public:
 
 private :
     
-    GLuint vaoB, vaoC, vaoG, vaoQ; // vertex array objects
-    GLuint vboB, vboC, vboG, vboQ; // vertex buffer objects
+    GLuint vaoG; // vertex array objects
+    GLuint vboG; // vertex buffer objects
     
     // int index = 0;
     bool indexFlag = true;
@@ -134,10 +134,26 @@ private :
     float min, max = 0.0;  // min and max values
     double integral = 0.0;
     
-    TransferFunction initGraph();
-    TransferFunction initBorder();
-    TransferFunction initCircle();
-    TransferFunction initQuadrant();
+
+    
+    TransferFunction initGraph() {
+        glGenVertexArrays(1, &vaoG);
+        glBindVertexArray(vaoG);
+        
+        glGenBuffers(1, &vboG);
+        glBindBuffer(GL_ARRAY_BUFFER, vboG);
+        
+        printf("model size: %d\tmax: %f\tmin: %f\n",(int)tModel.size(), max, min);
+        glBufferData(GL_ARRAY_BUFFER, 2*sizeof(float) * tModel.size(), &(tModel[0]), GL_STATIC_DRAW);
+        glEnableVertexAttribArray(0);
+        glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
+        
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+        glBindVertexArray(0);
+        return *this;
+    };
+    
+
     std::string join(const vector<std::string> vec, const std::string delim=".");
     std::vector<std::string> &split(const std::string &s, char delim, std::vector<std::string> &elems);
     std::vector<std::string> split(const std::string &s, char delim);

@@ -1,19 +1,19 @@
+#version 330 core
 
-#version 150
+layout(location = 0) out vec4 vFragColor;	//fragment shader output
 
-uniform sampler3D tex0;
+smooth in vec3 vUV;			//3D texture coordinates form vertex shader interpolated by rasterizer
 
-in vec3 texCoord;
-out vec4 outputFrag;
+//uniforms
+uniform sampler3D volume;	//volume dataset
+uniform sampler1D lut;		//transfer function (lookup table) texture
 
-void main(){
-
-    vec4 outColor;
-
-    outColor = texture(tex0, texCoord);
-
-    outputFrag = vec4(outColor.rgb, 0.5);
-
+void main()
+{
+    //Here we sample the volume dataset using the 3D texture coordinates from the vertex shader.
+    //Note that since at the time of texture creation, we gave the internal format as GL_RED
+    //we can get the sample value from the texture using the red channel. Then, we use the density
+    //value obtained from the volume dataset and lookup the colour from the transfer function texture
+    //by doing a dependent texture lookup.
+    vFragColor = texture(lut, texture(volume, vUV).r);
 }
-
-
